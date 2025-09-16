@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Звіти ПР</title>
+</head>
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between; /* Розміщує елементи по краях */
+        align-items: center; /* Вирівнює елементи по центру вертикально */
+        gap: 20px; /* Додає простір між елементами */
+    }
+    .h_text {
+        flex: 1; /* Дозволяє блоку з текстом займати доступний простір */
+    }
+    .h_img {
+        flex-shrink: 0; /* Забороняє зображенню стискатися */
+    }
+    img {
+        max-width: 100%; /* Забезпечує адаптивність зображення */
+        height: auto;
+    }
+        button {
+            padding: 5px;
+            margin: 1px;
+            background-color: aliceblue;
+            color: black;
+            border: 1px solid #5b0404;
+            border-radius: 15px;
+            font-size: medium;
+            font-family: 'Times New Roman';
+        }
+
+        button:active {
+            background-color: slategrey;
+        }
+
+        button:hover {
+            background-color: slategrey;
+        }
+        .navigation {
+            width: 17%;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        .plan {
+            margin-top: 20px;
+            display: inline-block;
+            border: 1px solid #000000;
+            border-radius: 15px;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        .content {
+            display: flex;
+        }
+        .info {
+            margin-left: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: darkblue;
+        }
+        a:hover {
+            text-decoration: none;
+            color: cornflowerblue;
+        }
+        .info {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        .info:target {
+            display: block;
+        }
+</style>
+<body>
+<div class="header">
+    <div class="h_text">
+        <h1>ЗВІТИ З ПРАКТИЧНИХ РОБІТ</h1>
+        <h1>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h1>
+        <h3>Виконавиця: Студентка групи ІА-33 Піголь Тетяна</h3>
+    </div>
+    <div class="h_img">
+        <img src="myphoto.jpg" alt="my photo" width="150" height="200">
+    </div>
+</div>
+<div class="tasks">
+    <button id="task_1">Практична робота №1</button>
+    <button id="task_2">Практична робота №2</button>
+    <button id="task_3">Практична робота №3</button>
+    <button id="task_4">Практична робота №4</button>
+    <button id="task_5">Практична робота №5</button>
+    <button id="task_6">Практична робота №6</button>
+    <button id="task_7">Практична робота №7</button>
+    <button id="task_8">Практична робота №8</button>
+    <button id="task_9">Практична робота №9</button>
+</div>
+<div class="content">
+    <div class="navigation">
+        <a id="topic" class="plan" href="#info1">Тема, мета, місце розташування сайту, звіту</a>
+        <a id="description" class="plan" href="#info2">Опис предметного середовища. Опис бізнес логіки</a>
+        <a id="structure" class="plan" href="#info3">Структура документа</a>
+        <a id="main_page" class="plan" href="#info4">Головна сторінка WEB-застосунку</a>
+        <a id="code" class="plan" href="#info5">Код головної сторінки</a>
+        <a id="conclusion" class="plan" href="#info6">Висновки</a>
+    </div>
+    <div class="info" id="info1">
+        <h4>Тема: ТЕГИ ТА АТРИБУТИ HTML-ДОКУМЕНТА. СТРУКТУРНА РОЗМІТКА. GIT.GITHUB. РОБОТА З РЕПОЗИТОРІЯМИ. ОПИС ЛОГІКИ ВЛАСНОГО WEB-ЗАСТОСУНКУ.</h4>
+        <h4>Мета: придбати практичні навички роботи  з GitHub, репозиторіями, HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами
+            Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
+        </h4>
+        <a href="https://iatan33.github.io/IA-33_appWEB-PigolTanya-FIOT-2025/index.html">Посилання на місце розташування сайту</a>
+    </div>
+    <div class="info" id="info2">
+        <h4>Галузь: сайт клініки.</h4>
+        <h5>Функціональні вимоги:</h5>
+        <ol>
+            <li>Авторизація. Клієнт може авторизуватися та отримати певні додаткові функціональні можливості, а саме:</li>
+            <ul>
+                <li>Переглядати історію своїх візитів.</li>
+                <li>Отримувати результати аналізів та обстежень.</li>
+            </ul>
+            <li>Перегляд графіку роботи клініки.</li>
+            <li>Перегляд інформації про лікарів.</li>
+            <li>Створення відгуків про роботу клініки.</li>
+            <li>Можливість записатися на прийом до певного лікаря.</li>
+            <li>Можливість переглянути геолокацію клініки.</li>
+        </ol>
+        <h5>Нефункціональні вимоги:</h5>
+        <ul>
+            <li>система повинна мати відкриту архітектуру;</li>
+            <li>система повинна мати веб-інтерфейс;</li>
+            <li>інтерфейс користувача має бути зручним та інтуїтивно-зрозумілим;</li>
+            <li>система повинна бути крос-платформною.</li>
+        </ul>
+    </div>
+    <div class="info" id="info3">
+        <p>
+            HTML-код таблиці:<br>
+            <img src="tablecode.png" alt="screenshot of code for HTMLtable"><br>
+            Тег <code>&lt;table&gt;</code> позначає початок талиці. Тег <code>&lt;/table&gt;</code> закриває її.<br>
+            Тег <code>&lt;tr&gt;</code> позначає рядок. Тег <code>&lt;td&gt;</code> позначає стовпець. Те, що вписано всередині буде відображатися в таблиці.<br>
+        </p>
+        <p>
+            HTML-код зображення:<br>
+            <img src="imgcode.png" alt="screenshot of code for HTMLimg"><br>
+            Тег <code>&lt;img&gt;</code> вказує, що тут буде зображення.<br>
+            Параметр <code>scr</code> вказує на розташування зображення.<br>
+            Параметр <code>alt</code> призначений для альтернативного опису зображення, яке буде застосовано якщо зображення не відображається або для текстового відтворення сайту.
+        </p>
+        <p>
+            HTML-код форми:<br>
+            <img src="formcode.png" alt="screenshot of code for HTMLform"><br>
+            <code>&lt;form&gt;</code>: Цей тег створює HTML-форму, яка використовується для збору даних користувача.<br>
+            <code>&lt;label&gt;</code>: Цей тег пов'язує текстову мітку з елементом управління форми, таким як <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> або <code>&lt;textarea&gt;</code>.<br>
+            <code>&lt;input&gt;</code>: Універсальний тег для створення інтерактивних елементів управління.<br>
+            <code>&lt;textarea&gt;</code>: Багаторядкове текстове поле, що дозволяє користувачеві вводити текст великого обсягу.<br>
+            <code>&lt;select&gt;</code>: Створює випадаючий список, який дозволяє користувачеві обрати один варіант зі списку.<br>
+            <code>&lt;option&gt;</code>: Використовується всередині <code>&lt;select&gt;</code>, щоб визначити окремий варіант у списку.<br>
+            <code>&lt;value&gt;</code>: Містить значення, яке буде відправлено на сервер, якщо цей варіант обрано.<br>
+            <code>&lt;type="submit"&gt;</code>: Це спеціальний тип <code>&lt;input&gt;</code>, який створює кнопку для відправлення даних форми на сервер.
+        </p>
+    </div>
+    <div class="info" id="info4">
+        <h4>Вигляд головної сторінки застосунку зроблений в Figma:</h4>
+        <img src="figma_main.png" alt="screenshot of design for main page">
+    </div>
+    <div class="info" id="info5">
+        <h4>Код головної сторінки:</h4>
+        <a href="https://github.com/iatan33/IA-33_appWEB-PigolTanya-FIOT-2025">Посилання на GitHub з кодом вебзастосунку</a>
+    </div>
+    <div class="info" id="info6">
+        <h4>Висновки:</h4>
+        <p>У ході даної практичної роботи були засвоєні ключові аспекти роботи з системою GitHub. На практиці було засвоєно основні теги для побудови HTML-сторінок.
+            Самостійна робота дала можливість познайомитись та засвоїти нові теги та параметри, які будуть корисними у майбутньому.
+            Пророблена робота задає фундамент для подальшої розробки та покращення вебзастосунку.</p>
+    </div>
+</div>
+</body>
+</html>
