@@ -7,21 +7,21 @@
 <style>
     .header {
         display: flex;
-        justify-content: space-between; /* Розміщує елементи по краях */
-        align-items: center; /* Вирівнює елементи по центру вертикально */
-        gap: 20px; /* Додає простір між елементами */
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
     }
     .h_text {
-        flex: 1; /* Дозволяє блоку з текстом займати доступний простір */
+        flex: 1;
     }
     .h_img {
-        flex-shrink: 0; /* Забороняє зображенню стискатися */
+        flex-shrink: 0;
     }
     img {
-        max-width: 100%; /* Забезпечує адаптивність зображення */
+        max-width: 100%;
         height: auto;
     }
-        button {
+        .button {
             padding: 5px;
             margin: 1px;
             background-color: aliceblue;
@@ -32,11 +32,11 @@
             font-family: 'Times New Roman';
         }
 
-        button:active {
+        .button:active {
             background-color: slategrey;
         }
 
-        button:hover {
+        .button:hover {
             background-color: slategrey;
         }
         .navigation {
@@ -88,15 +88,15 @@
     </div>
 </div>
 <div class="tasks">
-    <button id="task_1">Практична робота №1</button>
-    <button id="task_2">Практична робота №2</button>
-    <button id="task_3">Практична робота №3</button>
-    <button id="task_4">Практична робота №4</button>
-    <button id="task_5">Практична робота №5</button>
-    <button id="task_6">Практична робота №6</button>
-    <button id="task_7">Практична робота №7</button>
-    <button id="task_8">Практична робота №8</button>
-    <button id="task_9">Практична робота №9</button>
+    <a id="task_1" class="button" href="zvit.html">Практична робота №1</a>
+    <a id="task_2" class="button" href="zvit2.html">Практична робота №2</a>
+    <a id="task_3" class="button">Практична робота №3</a>
+    <a id="task_4" class="button">Практична робота №4</a>
+    <a id="task_5" class="button">Практична робота №5</a>
+    <a id="task_6" class="button">Практична робота №6</a>
+    <a id="task_7" class="button">Практична робота №7</a>
+    <a id="task_8" class="button">Практична робота №8</a>
+    <a id="task_9" class="button">Практична робота №9</a>
 </div>
 <div class="content">
     <div class="navigation">
