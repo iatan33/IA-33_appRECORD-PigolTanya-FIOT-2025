@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Звіти ПР</title>
+</head>
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .h_text {
+        flex: 1;
+    }
+    .h_img {
+        flex-shrink: 0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .button {
+        padding: 5px;
+        margin: 1px;
+        background-color: aliceblue;
+        color: black;
+        border: 1px solid #5b0404;
+        border-radius: 15px;
+        font-size: medium;
+        font-family: 'Times New Roman';
+    }
+
+    .button:active {
+        background-color: slategrey;
+    }
+
+    .button:hover {
+        background-color: slategrey;
+    }
+    .navigation {
+        width: 17%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .plan {
+        margin-top: 20px;
+        display: inline-block;
+        border: 1px solid #000000;
+        border-radius: 15px;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+    .content {
+        display: flex;
+    }
+    .info {
+        margin-left: 15px;
+    }
+    a {
+        text-decoration: none;
+        color: darkblue;
+    }
+    a:hover {
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+    .info {
+        display: none;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+    }
+    .info:target {
+        display: block;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="h_text">
+        <h1>ЗВІТИ З ПРАКТИЧНИХ РОБІТ</h1>
+        <h1>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h1>
+        <h3>Виконавиця: Студентка групи ІА-33 Піголь Тетяна</h3>
+    </div>
+    <div class="h_img">
+        <img src="myphoto.jpg" alt="my photo" width="150" height="200">
+    </div>
+</div>
+<div class="tasks">
+    <a id="task_1" class="button" href="zvit.html">Практична робота №1</a>
+    <a id="task_2" class="button" href="zvit2.html">Практична робота №2</a>
+    <a id="task_3" class="button">Практична робота №3</a>
+    <a id="task_4" class="button">Практична робота №4</a>
+    <a id="task_5" class="button">Практична робота №5</a>
+    <a id="task_6" class="button">Практична робота №6</a>
+    <a id="task_7" class="button">Практична робота №7</a>
+    <a id="task_8" class="button">Практична робота №8</a>
+    <a id="task_9" class="button">Практична робота №9</a>
+</div>
+<div class="content">
+    <div class="navigation">
+        <a id="topic" class="plan" href="#info1">Тема, мета, місце розташування сайту, звіту</a>
+        <a id="description" class="plan" href="#info2">Способи підключення стилів</a>
+        <a id="structure" class="plan" href="#info3">Селектори</a>
+        <a id="main_page" class="plan" href="#info4">CSS: Шрифти Текст Таблиці Фон Контур  Списки СSS Просунутий</a>
+        <a id="conclusion" class="plan" href="#info5">Висновки</a>
+    </div>
+    <div class="info" id="info1">
+        <h4>Тема: КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</h4>
+        <h4>Мета: придбати практичні навички роботи  з селекторами, ідентифікаторами, списками,  різноманітними властивостями
+            кольору і фону,  зовнішними та внутрішними  відступами,  плаваючими елементами, оформленням текстових елементів
+        </h4>
+        <a href="https://iatan33.github.io/IA-33_appWEB-PigolTanya-FIOT-2025/index.html">Посилання на місце розташування сайту</a>
+    </div>
+    <div class="info" id="info2">
+        <h4>Способи підключення стилів</h4>
+        <p>Існує три основні способи підключення Каскадних Таблиць Стилів (CSS) до HTML-документа.
+            Вибір способу залежить від того, наскільки великим є проєкт і наскільки потрібно відокремити структуру від оформлення.</p>
+        <dl>
+            <dt>Зовнішні Стилі:</dt>
+            <dd>Це найбільш поширений і рекомендований спосіб. Стилі зберігаються в окремому файлі з розширенням .css
+                (наприклад, styles.css), а потім підключаєте його до HTML-документа за допомогою тегу &lt;link&gt;.</dd>
+            <dt>Внутрішні Стилі:</dt>
+            <dd>Стилі розміщуються безпосередньо в HTML-документі, у секції &lt;head&gt;, за допомогою тегу &lt;style&gt;.</dd>
+            <dt>Внутрішні Стилі:</dt>
+            <dd>Стилі застосовуються безпосередньо до конкретного HTML-елемента за допомогою атрибута style.</dd>
+        </dl>
+
+    </div>
+    <div class="info" id="info3">
+        <p>
+            Селектори тегу:<br>
+            Селектор тегу вибирає усі елементи на сторінці з певним ім'ям тегу (наприклад, p, h1, div, a). <br>
+            <img src="tag.png" alt="screenshot of the code"><br>
+            Продемонстровані стилі застосовуються до посилань та заголовків h2. Ось приклад вигляду на самій сторінці<br>
+            <img src="tag-v.png" alt="screenshot of the result"><br>
+        </p>
+        <p>
+            Селектори класу:<br>
+            Селектор класу вибирає усі елементи, які мають певний атрибут class. Клас можна використовувати багаторазово на різних елементах.<br>
+            <img src="class.png" alt="screenshot of the code"><br>
+            Як клас призначається для елемента:<br>
+            <img src="class-html.png" alt="screenshot of the code"><br>
+            Результат:<br>
+            <img src="logo.png" alt="screenshot of the result"><br>
+        </p>
+        <p>
+            Селектори ідентифікатора:<br>
+            Селектор ідентифікатора вибирає лише один унікальний елемент на сторінці, який має певний атрибут id.
+            Ідентифікатор має бути унікальним для кожного елемента в межах сторінки.<br>
+            <img src="id.png" alt="screenshot of the code"><br>
+            Результат:<br>
+            <img src="for-id.png" alt="screenshot of the result"><br>
+        </p>
+        <p>
+            Важливо розуміти, що ці селектори мають різний пріоритет (специфічність), якщо стилі конфліктують:
+
+            <h4>Селектор Ідентифікатора (вищий)</h4>
+            <h5>Селектор Класу</h5>
+            <h6>Селектор Тегу (нижчий)</h6>
+            Тобто, стиль, визначений за допомогою ID, завжди переважатиме стиль, визначений за допомогою класу чи тегу.
+        </p>
+    </div>
+
+    <div class="info" id="info4">
+        <h4>CSS:</h4>
+        <p>У ході даної роботи були використані знання з різних тем CSS. Наприклад:</p><br>
+            <ul>
+                <li>
+                    Шрифти (Fonts): Властивості для контролю гарнітури,
+                    розміру, жирності та стилю шрифту (наприклад, font-family, font-size, font-weight).
+                </li>
+                <li>
+                    Текст (Text): Властивості для форматування тексту, включаючи вирівнювання, інтервал,
+                    колір та декорації (наприклад, text-align, line-height, color, text-decoration).
+                </li>
+                <li>
+                    Фон (Background): Властивості для встановлення кольору або зображення фону елемента
+                    (наприклад, background-color, background-image, background-repeat).
+                </li>
+                <li>
+                    Контур (Outline/Border): Властивості, що використовуються для встановлення меж навколо
+                    елементів (наприклад, border, outline). Вони визначають стиль, товщину та колір лінії.
+                </li>
+                <li>
+                    Списки (Lists): Властивості для стилізації маркерів або нумерації списків (наприклад,
+                    list-style-type, list-style-image).
+                </li>
+            </ul>
+        <p>Також був застосований просунутий CSS для створення невеличкої анімації кнопки.</p>
+        <img src="css.png" alt="screenshot of css">
+    </div>
+
+    <div class="info" id="info5">
+        <h4>Висновки:</h4>
+        <p>У ході даної практичної роботи були засвоєні ключові аспекти роботи з каскадними таблцями стилів.
+            Також була приділена особлива увага селекторам та ідентифікаторам для створення особливого дизайну.
+            Завдяки широким можливостям СSS було розроблено дизайн на основі попередньо створеного макету, що стане основою сайту для обраної теми.
+        </p>
+    </div>
+</div>
+</body>
+</html>
