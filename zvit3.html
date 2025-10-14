@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Звіти ПР</title>
+</head>
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .h_text {
+        flex: 1;
+    }
+    .h_img {
+        flex-shrink: 0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .button {
+        padding: 5px;
+        margin: 1px;
+        background-color: aliceblue;
+        color: black;
+        border: 1px solid #5b0404;
+        border-radius: 15px;
+        font-size: medium;
+        font-family: 'Times New Roman';
+    }
+
+    .button:active {
+        background-color: slategrey;
+    }
+
+    .button:hover {
+        background-color: slategrey;
+    }
+    .navigation {
+        width: 17%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .plan {
+        margin-top: 20px;
+        display: inline-block;
+        border: 1px solid #000000;
+        border-radius: 15px;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+    .content {
+        display: flex;
+    }
+    .info {
+        margin-left: 15px;
+    }
+    a {
+        text-decoration: none;
+        color: darkblue;
+    }
+    a:hover {
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+    .info {
+        display: none;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+    }
+    .info:target {
+        display: block;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="h_text">
+        <h1>ЗВІТИ З ПРАКТИЧНИХ РОБІТ</h1>
+        <h1>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h1>
+        <h3>Виконавиця: Студентка групи ІА-33 Піголь Тетяна</h3>
+    </div>
+    <div class="h_img">
+        <img src="myphoto.jpg" alt="my photo" width="150" height="200">
+    </div>
+</div>
+<div class="tasks">
+    <a id="task_1" class="button" href="index.html">Практична робота №1</a>
+    <a id="task_2" class="button" href="zvit2.html">Практична робота №2</a>
+    <a id="task_3" class="button" href="zvit3.html">Практична робота №3</a>
+    <a id="task_4" class="button">Практична робота №4</a>
+    <a id="task_5" class="button">Практична робота №5</a>
+    <a id="task_6" class="button">Практична робота №6</a>
+    <a id="task_7" class="button">Практична робота №7</a>
+    <a id="task_8" class="button">Практична робота №8</a>
+    <a id="task_9" class="button">Практична робота №9</a>
+</div>
+<div class="content">
+    <div class="navigation">
+        <a id="topic" class="plan" href="#info1">Тема, мета, місце розташування сайту, звіту</a>
+        <a id="description" class="plan" href="#info2">Верстки</a>
+        <a id="structure" class="plan" href="#info3">Застосунок</a>
+        <a id="conclusion" class="plan" href="#info4">Висновки</a>
+    </div>
+    <div class="info" id="info1">
+        <h4>Тема: ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА.  ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
+            АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT
+        </h4>
+        <h4>Мета: отримати практичні навички роботи  верстки сторінок засобами CSS, верстки
+            на основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-сторінок;
+            отримати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
+        </h4>
+        <h5>Посилання на репозиторії:</h5>
+        <ul>
+            <li><a href="https://github.com/iatan33/IA-33_appWEB-PigolTanya-FIOT-2025">Посилання на вебзастосунок</a></li>
+            <li><a href="https://github.com/iatan33/IA-33_appRECORD-PigolTanya-FIOT-2025">Посилання на HTML звітного документу</a></li>
+            <li><a href="https://github.com/iatan33/IA-33_INDEPENDENT-PigolTanya-FIOT-2025">Посилання на самостійні роботи</a></li>
+        </ul>
+        <h5>Посилання на живі сторінки:</h5>
+        <ul>
+            <li><a href="https://iatan33.github.io/IA-33_appWEB-PigolTanya-FIOT-2025/Pr2/main-L2.html">Посилання на вебзастосунок</a></li>
+            <li><a href="https://iatan33.github.io/IA-33_appRECORD-PigolTanya-FIOT-2025/">Посилання на HTML звітного документу</a></li>
+            <li><a href="https://iatan33.github.io/IA-33_INDEPENDENT-PigolTanya-FIOT-2025/index.html">Посилання на самостійні роботи</a></li>
+        </ul>
+
+    </div>
+
+    <div class="info" id="info2">
+        <p>
+            Фіксований (Fixed) макет:<br>
+            Фіксований макет (або макет фіксованої ширини) — це макет, який має задану, незмінну ширину в пікселях (наприклад, 960px, 1000px або 1200px), незалежно
+            від розміру вікна браузера чи екрана користувача. Вміст сторінки не розтягується і не стискається, а залишається центрованим у вікні.<br>
+        </p>
+        <p>
+            Гумовий (Liquid / Fluid) макет:<br>
+            Гумовий (або текучий/флюїдний) макет — це макет, ширина якого визначається у відсотках (наприклад, width: 100% або width: 80%). Вміст сторінки
+            розтягується або стискається відповідно до поточної ширини вікна браузера.<br>
+        </p>
+        <p>
+            Еластичний (Elastic) макет:<br>
+            Еластичний макет — це макет, ширина якого визначається за допомогою відносних одиниць, заснованих на розмірі шрифту, найчастіше em. Зміна розміру шрифту
+            користувачем призводить до зміни ширини всього макета.<br>
+        </p>
+        <p>
+            Адаптивний (Responsive) макет:<br>
+            Адаптивний макет — це макет, який динамічно змінює свій вигляд і структуру відповідно до розміру екрана (видової області) пристрою користувача.
+            Він використовує комбінацію гнучких сіток (відсотки), гнучких зображень і медіа-запитів CSS (@media) для застосування різних наборів стилів для різних
+            діапазонів ширини екрана (наприклад, для мобільних, планшетів і десктопів).<br>
+        </p>
+
+    </div>
+
+    <div class="info" id="info3">
+        <p>Для сайту застосовувалось комбінацію макетів, але його основною архітектурою є адаптивний макет з елементами Гумового та Фіксованого дизайну.
+        </p>
+        <p>
+            Адаптивний макет це головний підхід у проробленому дизайні, що забезпечує зміну вигляду сторінки залежно від розміру екрана.
+            (Використання CSS Media Queries, зміна розташування елементів з горизонтального на вертикальне, зміна розташування елементів у хедері та футері.)
+        </p>
+        <p>
+            Для великих екранів макет обмежує свою максимальну ширину за допомогою фіксованого макету. (Встановлення фіксованої ширини для пених елементів вказанра в пікселях)
+        </p>
+    </div>
+
+    <div class="info" id="info4">
+        <h4>Висновки:</h4>
+        <p>У ході даної практичної роботи були отримані практичні навички роботи з версткою сторінок засобами CSS,
+            версткою на основі плаваючих елементів. Вдалося з’ясувати переваги та недоліки типів макетів веб-сторінок на практиці.
+            Також були отримані практичні навички роботи верстки сторінок засобами CSS та FLEXBOX.
+        </p>
+    </div>
+</div>
+</body>
+</html>
