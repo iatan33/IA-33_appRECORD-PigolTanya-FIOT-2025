@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Звіти ПР</title>
+</head>
+<style>
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .h_text {
+    flex: 1;
+  }
+  .h_img {
+    flex-shrink: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .button {
+    padding: 5px;
+    margin: 1px;
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid #5b0404;
+    border-radius: 15px;
+    font-size: medium;
+    font-family: 'Times New Roman';
+  }
+
+  .button:active {
+    background-color: slategrey;
+  }
+
+  .button:hover {
+    background-color: slategrey;
+  }
+  .navigation {
+    width: 17%;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .plan {
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .content {
+    display: flex;
+  }
+  .info {
+    margin-left: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: darkblue;
+  }
+  a:hover {
+    text-decoration: none;
+    color: cornflowerblue;
+  }
+  .info {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  .info:target {
+    display: block;
+  }
+</style>
+<body>
+<div class="header">
+  <div class="h_text">
+    <h1>ЗВІТИ З ПРАКТИЧНИХ РОБІТ</h1>
+    <h1>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h1>
+    <h3>Виконавиця: Студентка групи ІА-33 Піголь Тетяна</h3>
+  </div>
+  <div class="h_img">
+    <img src="myphoto.jpg" alt="my photo" width="150" height="200">
+  </div>
+</div>
+<div class="tasks">
+  <a id="task_1" class="button" href="zvit.html">Практична робота №1</a>
+  <a id="task_2" class="button" href="zvit2.html">Практична робота №2</a>
+  <a id="task_3" class="button" href="zvit3.html">Практична робота №3</a>
+  <a id="task_4" class="button" href="zvit4.html">Практична робота №4</a>
+  <a id="task_5" class="button" href="zvit5.html">Практична робота №5</a>
+  <a id="task_6" class="button" href="zvit6.html">Практична робота №6</a>
+  <a id="task_7" class="button" href="zvit7.html">Практична робота №7</a>
+  <a id="task_8" class="button" href="zvit8.html">Практична робота №8</a>
+  <a id="task_9" class="button" href="zvit9.html">Практична робота №9</a>
+</div>
+<div class="content">
+  <div class="navigation">
+    <a id="topic" class="plan" href="#info1">Тема, мета, місце розташування сайту, звіту</a>
+    <a id="description" class="plan" href="#info2">Завдання 1</a>
+    <a id="structure" class="plan" href="#info3">Завдання 2</a>
+    <a id="conclusion" class="plan" href="#info4">Висновки</a>
+  </div>
+  <div class="info" id="info1">
+    <h4>Тема: ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ ОБ'ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК КОЛБЕКИ. ПЕРЕБИРАЮЧІ МЕТОДИ МАСИВУ</h4>
+    <h4>Мета: придбати практичні навички роботи з об'єктами. Методи об'єкта.. Callback. Стрілочні функції. Стрілочні функції як колбеки.
+.  Реалізація програм засовами мови JAVASCRIPT
+
+    </h4>
+    <h5>Посилання на репозиторії:</h5>
+    <ul>
+      <li><a href="https://github.com/iatan33/IA-33_appWEB-PigolTanya-FIOT-2025">Посилання на вебзастосунок</a></li>
+      <li><a href="https://github.com/iatan33/IA-33_appRECORD-PigolTanya-FIOT-2025">Посилання на HTML звітного документу</a></li>
+      <li><a href="https://github.com/iatan33/IA-33_INDEPENDENT-PigolTanya-FIOT-2025">Посилання на самостійні роботи</a></li>
+    </ul>
+    <h5>Посилання на живі сторінки:</h5>
+    <ul>
+      <li><a href="https://iatan33.github.io/IA-33_appWEB-PigolTanya-FIOT-2025/Pr2/main-L2.html">Посилання на вебзастосунок</a></li>
+      <li><a href="https://iatan33.github.io/IA-33_appRECORD-PigolTanya-FIOT-2025/">Посилання на HTML звітного документу</a></li>
+      <li><a href="https://iatan33.github.io/IA-33_INDEPENDENT-PigolTanya-FIOT-2025/index.html">Посилання на самостійні роботи</a></li>
+    </ul>
+
+  </div>
+
+  <div class="info" id="info2">
+    <h3>Завдання 1</h3>
+    <ul>
+        <li>Пункт 1: Реалізовано функцію createProduct, яка приймає об'єкт товару, додає йому унікальний id та викликає передану колбек-функцію (logProduct або logTotalPrice) для виведення результату.</li>
+        <img src="1.1.png" width="500">
+        <li>Пункт 3: Написано скрипт для обробки об'єкта medicines. За допомогою Object.entries, filter, sort та map відфільтровано прострочені ліки, відсортовано їх хронологічно та сформовано масив назв.</li>
+        <img src="1.3.png" width="500">
+        <li>Пункт 5: Створено функцію для масиву фруктів, яка за допомогою методу map повертає новий масив об'єктів зі знижкою 20% на ціну та доданим ідентифікатором (id).</li>
+        <img src="1.5.png" width="500">
+        <li>Пункт 7: Розроблено клас Client із використанням приватних властивостей #login та #email. Доступ до читання та запису цих властивостей забезпечено через відповідні геттери та сеттери.</li>
+        <img src="1.7.png" width="500">
+        <li>Пункт 9: Реалізовано логіку підрахунку кількості кожного тегу в масиві твітів. Використано flatMap для створення єдиного списку тегів та reduce для формування об'єкта-лічильника.</li>
+        <img src="1.9.png" width="500">
+        <li>Пункт 10: Написано функцію checkBrackets для валідації синтаксису коду. Вона перевіряє правильність закриття дужок (), {}, [] використовуючи структуру даних "стек".</li>
+        <img src="1.10.png" width="500">
+    </ul>
+    <br>
+    <h4>Результат виконання коду:</h4>
+    <img src="task1.png" width="500">
+
+  </div>
+
+  <div class="info" id="info3">
+    <h3>Завдання 2</h3>
+    <ul>
+      <li>Пункт 1: Виконано перетворення масиву об'єктів у плоский масив чисел. Метод flatMap збирає всі елементи з вкладених масивів values в один результуючий масив.</li>
+      <img src="2.1.png" width="700">
+      <li>Пункт 3: Здійснено перевірку масиву чисел. Метод every повертає true, оскільки всі елементи масиву відповідають умові парності (num % 2 === 0).</li>
+      <img src="2.3.png" width="600">
+      <li>Пункт 5: Реалізовано сортування масиву рядків у алфавітному порядку. Використано метод sort у поєднанні з localeCompare для коректного порівняння рядків.</li>
+      <img src="2.5.png" width="700">
+      <li>Пункт 7: Створено клас Calculator для арифметичних обчислень. Методи класу повертають this, що дозволяє використовувати ланцюжкові виклики (method chaining). Додано перевірку на ділення на нуль.</li>
+      <img src="2.7.png" width="400">
+    </ul>
+    <br>
+     <h4>Результат виконання коду:</h4>
+    <img src="task2.png" width="500">
+  </div>
+
+  <div class="info" id="info4">
+    <h4>Висновки:</h4>
+    <p>У ході даної практичної роботи були отримані та покращені практичні навички роботи з об'єктами та масивами об'єктів у мові програмування JavaScript.
+      Під час розв'язання завдань було опрацьовано роботу з об'єктами та Callback-функціями та отримано навички роботи з методами масивів.
+      Лабораторна робота дозволила поглибити розуміння маніпуляцій зі складними структурами даних у JavaScript.
+    </p>
+  </div>
+</div>
+
+<script>
+  console.log("--- ЗАВДАННЯ №1 ---");
+
+// Пункт 1
+
+function createProduct(obj, callback) {
+    const product = {
+        ...obj,
+        id: Date.now()
+    };
+    callback(product);
+}
+
+const logProduct = (product) => {
+    console.log("Product details:", product);
+};
+
+const logTotalPrice = (product) => {
+    console.log("Total price:", product.price * product.quantity);
+};
+
+createProduct({ name: "Laptop", price: 1000, quantity: 2 }, logProduct);
+createProduct({ name: "Phone", price: 500, quantity: 3 }, logTotalPrice);
+
+
+// Пункт 3
+
+const medicines = {
+    "Агалгін": new Date("2022-05-01"),
+    "Ношпа": new Date("2025-07-02"),
+    "Альфахолін": new Date("2024-12-21"),
+    "Аспірин": new Date("2022-08-15"),
+    "Аспаркам": new Date("2024-04-18"),
+};
+
+const getValidMedicines = (meds) => {
+    const now = new Date();
+    return Object.entries(meds)
+        .filter(([name, date]) => date > now)
+        .sort(([, dateA], [, dateB]) => dateA - dateB)
+        .map(([name]) => name);
+};
+
+console.log("Valid medicines:", getValidMedicines(medicines));
+
+
+// Пункт 5
+
+const fruits = [
+  { name: "apple", price: 200 },
+  { name: "orange", price: 300 },
+  { name: "grapes", price: 750 },
+];
+
+const processFruits = (arr) => {
+    return arr.map((fruit, index) => ({
+        ...fruit,
+        id: index + 1,
+        price: fruit.price * 0.8
+    }));
+};
+
+console.log("Processed fruits:", processFruits(fruits));
+
+
+// Пункт 7
+
+class Client {
+    #login;
+    #email;
+
+    constructor(login, email) {
+        this.#login = login;
+        this.#email = email;
+    }
+
+    get login() {
+        return this.#login;
+    }
+
+    set login(newLogin) {
+        this.#login = newLogin;
+    }
+
+    get email() {
+        return this.#email;
+    }
+
+    set email(newEmail) {
+        this.#email = newEmail;
+    }
+}
+
+const client = new Client("user123", "user@example.com");
+console.log("Client login:", client.login);
+client.login = "newUser";
+console.log("New Client login:", client.login);
+
+
+// Пункт 9
+
+const tweets = [
+    { id: "000", likes: 5, tags: ["js", "nodejs"] },
+    { id: "001", likes: 2, tags: ["html", "css"] },
+    { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+    { id: "003", likes: 8, tags: ["css", "react"] },
+    { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+];
+
+const countTags = (tweets) => {
+    return tweets
+        .flatMap(tweet => tweet.tags)
+        .reduce((acc, tag) => {
+            acc[tag] = (acc[tag] || 0) + 1;
+            return acc;
+        }, {});
+};
+
+console.log("Tags count:", countTags(tweets));
+
+
+// Пункт 10:
+
+function checkBrackets(str) {
+    const stack = [];
+    const brackets = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    };
+    
+    for (const char of str) {
+        if (['(', '{', '['].includes(char)) {
+            stack.push(char);
+        } else if ([')', '}', ']'].includes(char)) {
+            const lastOpen = stack.pop();
+            if (lastOpen !== brackets[char]) {
+                return false;
+            }
+        }
+    }
+    return stack.length === 0;
+}
+
+console.log("Check brackets '(someFn)':", checkBrackets("(someFn)"));
+console.log("Check brackets '{[()]}':", checkBrackets("{[()]}"));
+console.log("Check brackets '{[(])}':", checkBrackets("{[(])}"));
+
+
+
+
+console.log("--- ЗАВДАННЯ №2 ---");
+
+// Пункт 1
+
+const data = [
+ { id: 1, values: [1, 2, 3] },
+ { id: 2, values: [4, 5, 6] },
+ { id: 3, values: [7, 8, 9] },
+];
+
+const flatValues = data.flatMap(item => item.values);
+console.log("Flat values:", flatValues);
+
+
+// Пункт 3
+
+const numbers = [2, 4, 6, 8, 10];
+const allEven = numbers.every(num => num % 2 === 0);
+console.log("All even:", allEven); // true
+
+
+// Пункт 5
+
+const stringArray = ['banana', 'orange', 'apple', 'pear'];
+const sortedStrings = [...stringArray].sort((a, b) => a.localeCompare(b));
+console.log("Sorted strings:", sortedStrings);
+
+
+// Пункт 7
+
+class Calculator {
+    constructor() {
+        this.value = 0;
+    }
+
+    number(val) {
+        this.value = val;
+        return this;
+    }
+
+    add(val) {
+        this.value += val;
+        return this;
+    }
+
+    subtract(val) {
+        this.value -= val;
+        return this;
+    }
+
+    multiply(val) {
+        this.value *= val;
+        return this;
+    }
+
+    divide(val) {
+        if (val === 0) {
+            console.error("Помилка: Ділення на нуль неможливе!");
+            return this; 
+        }
+        this.value /= val;
+        return this;
+    }
+
+    getResult() {
+        return this.value;
+    }
+}
+
+const calc = new Calculator();
+const result = calc
+   .number(10)
+   .add(5)
+   .subtract(3)
+   .multiply(4)
+   .divide(2)
+   .getResult();
+
+console.log("Calculator result:", result);
+</script>
+
+</body>
+</html>
