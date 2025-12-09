@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Звіти ПР</title>
+</head>
+<style>
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .h_text {
+    flex: 1;
+  }
+  .h_img {
+    flex-shrink: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .button {
+    padding: 5px;
+    margin: 1px;
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid #5b0404;
+    border-radius: 15px;
+    font-size: medium;
+    font-family: 'Times New Roman';
+  }
+
+  .button:active {
+    background-color: slategrey;
+  }
+
+  .button:hover {
+    background-color: slategrey;
+  }
+  .navigation {
+    width: 17%;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .plan {
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .content {
+    display: flex;
+  }
+  .info {
+    margin-left: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: darkblue;
+  }
+  a:hover {
+    text-decoration: none;
+    color: cornflowerblue;
+  }
+  .info {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  .info:target {
+    display: block;
+  }
+</style>
+<body>
+<div class="header">
+  <div class="h_text">
+    <h1>ЗВІТИ З ПРАКТИЧНИХ РОБІТ</h1>
+    <h1>З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. FRONTEND РОЗРОБКИ"</h1>
+    <h3>Виконавиця: Студентка групи ІА-33 Піголь Тетяна</h3>
+  </div>
+  <div class="h_img">
+    <img src="myphoto.jpg" alt="my photo" width="150" height="200">
+  </div>
+</div>
+<div class="tasks">
+  <a id="task_1" class="button" href="zvit.html">Практична робота №1</a>
+  <a id="task_2" class="button" href="zvit2.html">Практична робота №2</a>
+  <a id="task_3" class="button" href="zvit3.html">Практична робота №3</a>
+  <a id="task_4" class="button" href="zvit4.html">Практична робота №4</a>
+  <a id="task_5" class="button" href="zvit5.html">Практична робота №5</a>
+  <a id="task_6" class="button" href="zvit6.html">Практична робота №6</a>
+  <a id="task_7" class="button" href="zvit7.html">Практична робота №7</a>
+  <a id="task_8" class="button" href="zvit8.html">Практична робота №8</a>
+  <a id="task_9" class="button" href="zvit9.html">Практична робота №9</a>
+</div>
+<div class="content">
+  <div class="navigation">
+    <a id="topic" class="plan" href="#info1">Тема, мета, місце розташування сайту, звіту</a>
+    <a id="description" class="plan" href="#info2">Завдання 1</a>
+    <a id="structure" class="plan" href="#info3">Завдання 2</a>
+    <a id="conclusion" class="plan" href="#info4">Висновки</a>
+  </div>
+  <div class="info" id="info1">
+    <h4>Тема: ПРОТОТИПИ. КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ'ЄКТ ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ. </h4>
+    <h4>Мета: придбати практичні навички роботи з DOM, подіями. делегуванням подій.</h4>
+    
+    <h5>Посилання на репозиторії:</h5>
+    <ul>
+      <li><a href="https://github.com/iatan33/IA-33_appWEB-PigolTanya-FIOT-2025">Посилання на вебзастосунок</a></li>
+      <li><a href="https://github.com/iatan33/IA-33_appRECORD-PigolTanya-FIOT-2025">Посилання на HTML звітного документу</a></li>
+      <li><a href="https://github.com/iatan33/IA-33_INDEPENDENT-PigolTanya-FIOT-2025">Посилання на самостійні роботи</a></li>
+    </ul>
+    <h5>Посилання на живі сторінки:</h5>
+    <ul>
+      <li><a href="https://iatan33.github.io/IA-33_appWEB-PigolTanya-FIOT-2025/v2.6/main-L2.html">Посилання на вебзастосунок</a></li>
+      <li><a href="https://iatan33.github.io/IA-33_appRECORD-PigolTanya-FIOT-2025/">Посилання на HTML звітного документу</a></li>
+      <li><a href="https://iatan33.github.io/IA-33_INDEPENDENT-PigolTanya-FIOT-2025/index.html">Посилання на самостійні роботи</a></li>
+    </ul>
+
+  </div>
+
+  <div class="info" id="info2">
+    <h3>Завдання 1 (у власному застосунку)</h3>
+    <p>Реалізовано механізм делегування подій. Слухач подій додано на батьківський контейнер галереї; при кліку на конкретний елемент колекції відкривається модальне вікно з унікальним описом цього елемента.</p>
+    <h4>Структура спливаючого вікна:</h4>
+    <img src="1h.png" width="500">
+    <br>
+
+    <h4>Код реалізації:</h4>
+    <img src="scr.png" width="500">
+
+    <h4>Результат виконання коду:</h4>
+    <img src="res6.1.png" width="500">
+
+  </div>
+
+  <div class="info" id="info3">
+    <h3>Завдання 2 (з таблиці)</h3>
+    <ul>
+        <li>Пункт 1: Реалізовано скрипт, який при натисканні на кнопку «SHOW ME» зчитує значення з текстового поля введення та виводить його у консоль браузера.</li>
+        <img src="c6.1.png" width="500">
+        <h5>Результат виконання коду:</h5>
+        <img src="6.2.1.png" width="500">
+
+        <li>Пункт 3: Створено поле для введення пароля з кнопкою перемикання видимості. При натисканні на кнопку тип інпуту змінюється з password на text (і навпаки), а текст кнопки — з «Розкрити» на «Приховати».</li>
+        <img src="c6.3.png" width="500">
+        <h5>Результат виконання коду:</h5>
+        <img src="6.2.3.1.png" width="500">
+        <img src="6.2.3.2.png" width="500">
+
+        <li>Пункт 5: Додано прослуховувач події click на об'єкт window. Скрипт визначає цільовий елемент кліку (event.target): якщо це div з id="place", у консоль виводиться true, в іншому випадку - false.</li>
+        <img src="c6.5.png" width="500">
+        <h5>Результат виконання коду:</h5>
+        <img src="6.2.5.png" width="500">
+
+        <li>Пункт 7: Написано скрипт для обробки списку категорій ul#categories. Використовуючи forEach, код виводить у консоль кількість категорій, назву кожної категорії та кількість вкладених елементів у ній.</li>
+        <img src="c6.7.png" width="500">
+        <h5>Результат виконання коду:</h5>
+        <img src="6.2.7.png" width="500">
+
+        <li>Пункт 8: Реалізовано обробку форми логіна через подію submit. Скрипт запобігає перезавантаженню сторінки, перевіряє поля на заповненість, збирає введені дані в об'єкт, виводить його в консоль та очищає форму методом reset.</li>
+        <img src="c6.8.png" width="500">
+        <h5>Результат виконання коду:</h5>
+        <img src="6.2.8.png" width="500">
+
+        <li>Пункт 9: Створено функціонал зміни кольору фону сторінки на випадкове шістнадцяткове значення Hex при кліку на кнопку. Обраний колір також відображається текстовим вмістом у тегу span.</li>
+        <img src="c6.9.png" width="500">
+        <h5>Результат виконання коду:</h5>
+        <img src="6.2.9.png" width="500">
+
+        <li>Пункт 10: Розроблено інтерфейс для створення та очищення колекції елементів. Функція createBoxes генерує задану кількість кольорових квадратів, розміри яких збільшуються на 10px з кожним елементом. Функція destroyBoxes очищає DOM від цих елементів.</li>
+        <img src="c6.10.png" width="500">
+        <h5>Результат виконання коду:</h5>
+        <img src="6.2.10.png" width="500">
+    </ul>
+  </div>
+
+  <div class="info" id="info4">
+    <h4>Висновки:</h4>
+    <p>У ході даної практичної роботи були отримані та покращені практичні навички роботи з об'єктною моделлю документа (DOM) та подіями в JavaScript.
+      Я навчилася отримувати доступ до елементів DOM-дерева та маніпулювати їхніми властивостями, атрибутами й стилями;
+      використовувати обробники подій для реалізації інтерактивності веб-сторінки, зокрема подій click та submit;
+      керувати поведінкою форм, валідувати вхідні дані та запобігати перезавантаженню сторінки під час відправки даних;
+      динамічно створювати та видаляти колекції елементів у DOM-дереві.
+    </p>
+    <p>Також було реалізовано патерн делегування подій, що дозволяє оптимізувати код, встановлюючи один обробник на батьківський контейнер для управління групою дочірніх елементів.</p>
+  </div>
+</div>
+</body>
+</html>
