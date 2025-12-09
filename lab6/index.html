@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Лабораторна робота №6</h1>
+        <p><strong>Тема:</strong> ПРОТОТИПИ. КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ'ЄКТ ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ.</p>
+        <p><strong>Мета:</strong> Придбати практичні навички роботи з DOM, подіями, делегуванням подій.</p>
+    </header>
+
+    <main>
+        <section class="task">
+            <h2>Завдання №1</h2>
+            <p>Натискання на кнопку "SHOW ME" має виводити значення з поля введення у консолі.</p>
+            <div class="task-content">
+                <button id="task1-btn">SHOW ME</button>
+                <input type="text" id="task1-input" placeholder="Введіть текст">
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Завдання №3</h2>
+            <p>Кнопка ховає/розкриває текст в інпуті (пароль).</p>
+            <div class="task-content">
+                <input type="password" id="task3-input" value="password123">
+                <button id="task3-btn">Розкрити</button>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Завдання №5</h2>
+            <p>Клікніть по вікну. Якщо потрапили в зелений квадрат - true, інакше - false (див. консоль).</p>
+            <div class="task-content">
+                <p class="taskTitle">Область завдання 5:</p>
+                <div id="place"></div>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Завдання №7</h2>
+            <p>Інформація про категорії виводиться в консоль.</p>
+            <ul id="categories">
+                <li class="item">
+                    <h2>Animals</h2>
+                    <ul>
+                        <li>Cat</li>
+                        <li>Hamster</li>
+                        <li>Horse</li>
+                        <li>Parrot</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <h2>Products</h2>
+                    <ul>
+                        <li>Bread</li>
+                        <li>Prasley</li>
+                        <li>Cheese</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <h2>Technologies</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="task">
+            <h2>Завдання №8</h2>
+            <p>Управління формою логіна.</p>
+            <form class="login-form">
+                <label>
+                    Email
+                    <input type="email" name="email" />
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="password" />
+                </label>
+                <button type="submit">Log in</button>
+            </form>
+        </section>
+
+        <section class="task">
+            <h2>Завдання №9</h2>
+            <p>Зміна кольору фону body.</p>
+            <div class="widget">
+                <p>Background color: <span class="color">-</span></p>
+                <button type="button" class="change-color">Change color</button>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2>Завдання №10</h2>
+            <p>Створення та очищення колекції елементів.</p>
+            <div id="controls">
+                <input type="number" min="1" max="100" step="1" id="task10-input" />
+                <button type="button" data-create>Create</button>
+                <button type="button" data-destroy>Destroy</button>
+            </div>
+            <div id="boxes"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
